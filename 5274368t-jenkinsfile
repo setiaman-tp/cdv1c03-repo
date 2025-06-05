@@ -1,23 +1,50 @@
 pipeline {
     agent any
     stages {
-        stage("clean") {
+        stage("ST1-5274368T") {
             steps {
-                echo "Start Clean"
+                echo "ST1-5274368T: Setup Release Environment Completed"
                 
             }
         }
-        stage("test") {
+        stage("ST2-5274368T") {
             steps {
-                echo "Start Test"
+                echo "To create container"
+                echo "ST2-5274368T: Server1 is successfully created"
                 
             }
         }
-        stage("build") {
+        stage("ST3-5274368T") {
             steps {
-                echo "Start build"
+                echo "ST3-5274368T: Server1 is healthy – Health check done"
                 
             }
         }
+
+        stage("ST4A-5274368T") {
+            steps {
+                echo "ST4-5274368T: SQLI Check Completed"
+                
+            }
+        }
+        stage("ST4B-5274368T") {
+            steps {
+                echo "ST4-5274368T: XSS Check Completed"
+                
+            }
+        }
+        stage("ST5-5274368T") {
+            steps {
+                echo "ST5-5274368T: Continue the pipeline."
+                
+            }
+        }
+        stage("ST6-5274368T") {
+            steps {
+                echo "ST5-5274368T: Ready for next phase"
+                
+            }
+        }
+
     }
 }
